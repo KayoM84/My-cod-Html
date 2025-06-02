@@ -12,6 +12,13 @@ body {
     color: black
 }
 
+div#interface{
+    width: 900px;
+    background-color: gainsboro;
+    margin: 10px auto 10px auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+    padding: 10px 10px 10px 10px;
+}
 
 p {
     text-align: justify;
@@ -19,9 +26,43 @@ p {
     
 }
 
+header#cabecalho img#icone {
+    position: absolute;
+    left: 900px;
+    top: 50px;
+}
+
+header#cabecalho {
+
+    border-bottom: 1px #606060 solid;
+    height: 240px;
+    background: url("_Imagens/Nobel_Prize.png") no-repeat 0px 100px;
+}
+
+header#cabecalho h1 {
+    font-family: arial, sans-serif;
+    font-size: 30pt;
+    color: #606060;
+    text-align: left;
+    padding: 5px;
+    margin-bottom: 0px;
+    margin-top: 50px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+}
+
+header#cabecalho h2{
+    font-family: arial, sans-serif;
+    font-size: 15pt;
+    color: #888888;
+    margin-top: 0px;
+}
+
 .tabela {
     font-family: Arial;
 }
+
+
+
 
 
 /* fORMATAÇÃO DE IMAGENS */
@@ -32,29 +73,99 @@ figure.foto-legenda {
         box-shadow: 1px 1px 4px black;
         width: 400px;
         height: 600px;
-        position: relative;
+        position: relative;  
 }
 
 figure.foto-legenda img {
 
     width: 100%;
-    height: 60%;
+    height: 100%;
     
 }
 
 figure.foto-legenda figcaption {
-    position: down;
     top: 0px;
-    background-color: rgba(128, 128, 128, 0.4);
-    color: white;
+    background-color: rgba(7, 48, 231, 0.993);
+    color: rgb(255, 251, 251);
     width: 100%;
     height: 40%;
     padding: 10px;
     box-sizing: border-box;
-    opacity: 0;
-    
+    opacity: 1;
+    display: none;
+ 
+}
+
+figure.foto-legenda:hover img{
+    width: 100%;
+    height: 60%;
+    opacity: 1;
 }
 
 figure.foto-legenda:hover figcaption{
     opacity: 1;
+    transition: opacity 3s;
+    width: 100%;
+    height: 40%;
+    display: block;
+}
+
+figure.foto-legenda:hover {
+    width: 416px;
+    height: 616px;
+    
+}
+
+/*Formatação menu*/
+
+nav#menu {
+    display: block;
+}
+
+nav#menu h1 {
+    display: none;
+}
+
+nav#menu ul {
+list-style: none;
+text-transform: uppercase;
+position: absolute;
+top: -5px;
+left: auto;
+}
+
+nav#menu li{
+display: inline-block;
+padding: 10px;
+margin: 2px;
+background-color: #dddddddd;
+transition: background-color 1s;
+}
+
+nav#menu li:hover {
+    background-color: #606060;
+}
+
+nav#menu a {
+    color: green;
+    text-decoration: none;
+}
+
+nav#menu a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Fale Conosco.html*/
+
+.Fale-conosco-pagina2 {
+    font-family: arial;
+    text-align: left;
+    text-shadow: 2px 2px 2px black;
+
+}
+
+.formulario{
+    width: 50%;
+    height: 50%;
 }
