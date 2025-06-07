@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Java</title>
+        <script>
+            function acendeLampa() {
+                document.getElementById("luz").src="../_Imagens/lampadaAcesaN.png";
+            }
+            function LampadaApagada() {
+                document.getElementById("luz").src="../_Imagens/LampadaApagada.png";
+            }
+        </script>
+</head>
+<body>
+    <h1>Acenda a Imagen</h1>
+    <img src="../_Imagens/LampadaApagada.png" id="luz" onmousemove="acendeLampa()" onmouseout="LampadaApagada()"/> 
+</body>
+</html>
