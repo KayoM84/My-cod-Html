@@ -11,10 +11,14 @@
             function LampadaApagada() {
                 document.getElementById("luz").src="../_Imagens/LampadaApagada.png";
             }
+            function Quebrada() {
+                document.getElementById("luz").src="../_Imagens/Quebrada.png";
+                
+            }
         </script>
 </head>
 <body>
     <h1>Acenda a Imagen</h1>
-    <img src="../_Imagens/LampadaApagada.png" id="luz" onmousemove="acendeLampa()" onmouseout="LampadaApagada()"/> 
+    <img src="../_Imagens/LampadaApagada.png" id="luz" onmousemove="acendeLampa()" onmouseout="LampadaApagada()" onclick="Quebrada()"/> 
 </body>
 </html>

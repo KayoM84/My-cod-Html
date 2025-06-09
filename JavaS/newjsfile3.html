@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Java</title>
+        <script>
+            var quebrada = false;
+            function mudaLampa(tipo) {
+                if (tipo  == 1) {
+                    arquivo = "../_Imagens/lampadaAcesaN.png"
+                }
+                if (tipo == 2) {
+                    arquivo = "../_Imagens/LampadaApagada.png"
+                }
+                if (tipo == 3) {
+                    arquivo = "../_Imagens/Quebrada.png"
+                }
+                if (!quebrada) {
+                    document.getElementById("luz").src=arquivo;
+                    if (tipo == 3){
+                        quebrada = true;
+                        }
+                }
+
+            }
+        </script>
+</head>
+<body>
+    <h1>Acenda a Imagen</h1>
+    <img src="../_Imagens/LampadaApagada.png" id="luz" onmousemove="mudaLampa(1)" onmouseout="mudaLampa(2)" onclick="mudaLampa(3)"/> 
+</body>
+</html>
