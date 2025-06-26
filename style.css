@@ -42,7 +42,7 @@ a:hover {
 
 header#cabecalho img#icone {
     position: absolute;
-    left: 900px;
+    left: 1200px;
     top: 50px;
 }
 
@@ -250,14 +250,6 @@ header#cabecalho-artigo h3{
     font-size: 12px;
     color: #606060;
     
-}
-article#noticia-principal h2 {
-    font-size: 12pt;
-    color: black;
-    background-color: white;
-    padding: 5px 0px 5px 10px;
-    margin: 10px 0px 10px 0px;
-
 }
 
 .direita {

@@ -6,17 +6,28 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<script src="_cod/java.js"></script>
 <body>
-    <nav id="menu">
-        <h1>Menu Principal</h1>
-          <ul type="circo">
-              <li><a href="index.html">HOME</a></li>
-              <li><a href="indexEspecificacoes.html">ESPECIFICAÇÕES</a></li>
-              <li><a href="indexFotos.html">FOTOS</a></li>
-              <li><a href="indexMultimidia.html">MULTIMIDIA</a></li>
-              <li><a href="indexFale.html">FALE CONOSCO</a></li>
-        </ul>
-      </nav>
+    <header id="cabecalho">
+        <hgroup>
+          <h1>A Importância do Prêmio Nobel</h1>
+          <h2>Resumo</h2>
+        </hgroup>
     
+        <img id="icone" src="_Imagens/Premio Nobel Paz.jpg">
+    
+        <nav id="menu">
+          <h1>Menu Principal</h1>
+              <ul type="circo">
+                  <li onmouseover="mudaFoto('_Imagens/Premio Nobel Paz.jpg')" onmouseout="mudaFoto('_Imagens/Home.jpg')"><a href="index.html">HOME</a></li>
+                  <li onmouseover="mudaFoto('_Imagens/Malala.jpeg')" onmouseout="mudaFoto('_Imagens/Home.jpg')"><a href="indexEspecificacoes.html">ESPECIFICAÇÕES</a></li>
+                  <li onmouseover="mudaFoto('_Imagens/Multimidia.jpg')" onmouseout="mudaFoto('_Imagens/Home.jpg')"><a href="indexFotos.html">FOTOS</a></li>
+                  <li onmouseover="mudaFoto('_Imagens/Multimidia.jpg')" onmouseout="mudaFoto('_Imagens/Home.jpg')"><a href="indexMultimidia.html">MULTIMIDIA</a></li>
+                  <li onmouseover="mudaFoto('_Imagens/FaleConosco.jpg')" onmouseout="mudaFoto('_Imagens/Home.jpg')"><a href="indexFale.html">FALE CONOSCO</a></li>
+              </ul>
+        </nav>
+        </header>
+    
+</div>    
 </body>
 </html>
